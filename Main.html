@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>오수빈 (Osubin)</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main id="app">
+    
+        <header id="header">
+          <nav>
+            <ul class="nav-list">
+              <li><a href="#about" class="list-link">ABOUT</a></li>
+              <li><a href="#project" class="list-link">PROJECT</a></li>
+              <li><a href="#contact" class="list-link">CONTACT</a></li>
+              <li>
+                <a href="https://github.com/osubin" class="list-link btn-code">GitHub</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="bar-bg">
+            <span class="bar-ing"></span>
+          </div>
+        </header>
+
+        <section class="section-main" hidden>
+        <div class="cont-intro">
+          <a name="info"></a>
+          <img src="person.png" alt="프로필 이미지" />
+          <div>
+            <p class="txt-title"></p>
+          </div>
+        </div>
+      
+
+      
+      <section class="section-about">
+        <a name="about"></a>
+        <h2>ABOUT.</h2>
+        <div class="cont-about">
+          <div class="slide-container">
+            <div class="slide-album">
+              <div class="slide-images">
+                <img src="heart1.png" alt="내 사진" />
+                <img src="heart2.png" alt="내 사진" />
+                <img src="heart3.png" alt="내 사진" />
+              </div>
+              <button class="btn-next">▶</button>
+              <button class="btn-prev">◀</button>
+            </div>
+          </div>
+          <div class="info-about">
+            <dl class="txt-about">
+              <div>
+                <dt>이름</dt>
+                <dd>오수빈</dd>
+              </div>
+              <div>
+                <dt>생년월일</dt>
+                <dd>98.04.16</dd>
+              </div>
+              <div>
+                <dt>거주지</dt>
+                <dd>경상남도 사천시</dd>
+              </div>
+              <div>
+                <dt>소속</dt>
+                <dd>SYSNOVA</dd>
+              </div>
+            </dl>
+            <div class="btn-about">
+              <button class="btn-open" type="button">
+                <img src="heart.png"/>취미
+              </button>
+              <button class="btn-open" type="button">
+                <img src="person.png" color="black"/>성격
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-project">
+        <a name="project"></a>
+        <h2>PROJECT.</h2>
+        <article class="box-project">
+          <div>
+            <img
+              class="img-project"
+              src="travel.png"
+              alt="첫번째 프로젝트 이미지"
+            />
+            <button class="btn-detail" type="button" onclick="location.href='project.html'">
+              More
+            </button>
+          </div>
+          <div class="txt-project">
+            <h3>I Love travel</h3>
+            <dl>
+              <dt>기간</dt>
+              <dd>shit secret</dd>
+              <dt>설명</dt>
+              <dd>여행 정보를 공유합니다.</dd>
+              <dt>사용 기술</dt>
+              <dd>JavaScript</dd>
+            </dl>
+          </div>
+        </article>
+
+        <article class="box-project">
+          <div>
+            <img
+              class="img-project"
+              src="to-do-list.png"
+              alt="두번째 프로젝트 이미지"
+            />
+            <button
+              class="btn-detail"
+              type="button"
+              onclick="location.href='todo.html'"
+            >
+              More
+            </button>
+          </div>
+          <div class="txt-project">
+            <h3>TO DO</h3>
+            <dl>
+              <dt>기간</dt>
+              <dd>2072.04</dd>
+              <dt>설명</dt>
+              <dd>오늘 할 일을 기록하고 삭제가 가능한 웹페이지입니다.</dd>
+              <dt>사용 기술</dt>
+              <dd>HTML/CSS, JavaScript</dd>
+            </dl>
+          </div>
+        </article>
+      </section>
+    </section>
+
+      <footer id="footer">
+        <a name="contact"></a>
+        <div class="box-footer">
+          <h2>CONTACT.</h2>
+          <ul class="link-sns">
+            <li>
+              <a href="https://github.com/osubin"
+                ><img
+                  class="img-github"
+                  src="free-icon-github-logo-25231.png"
+                  alt="깃허브 주소"
+                />github</a
+              >
+            </li>
+          </ul>
+          <p>© 2022 - SuBin</p>
+        </div>
+      </footer>
+      <div class="modal-background">
+        <div class="modal">
+          <h3>취미</h3>
+          <h4>없구요</h4>
+          <img src="hobby.jpg" alt="취미 이미지" />
+          <p>
+            취미는 없구요🎀 그냥 놀고 싶습니다.✍🏻
+          </p>
+          <button type="button" class="btn-close">Close</button>
+        </div>
+      </div>
+      <div class="modal-background">
+        <div class="modal">
+          <h3>성격</h3>
+          <h4>화가 많아요</h4>
+          <img src="character.jpg" alt="성격 이미지" />
+          <p>
+            계획을 세우고 실천하는 것을 좋아해요📝 계획을 흔드는 사람이 있으면 때려요💪🏻
+          </p>
+          <button type="button" class="btn-close">Close</button>
+        </div>
+      </div>
+      <button onclick="moveToTop()" class="btn-moveTop"><img src="up.png"></button>
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>
